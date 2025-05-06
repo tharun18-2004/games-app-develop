@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div id="game-board">
+        <div class="cell" onclick="cellClick(this, 0)"></div>
+        <div class="cell" onclick="cellClick(this, 1)"></div>
+        <div class="cell" onclick="cellClick(this, 2)"></div>
+        <div class="cell" onclick="cellClick(this, 3)"></div>
+        <div class="cell" onclick="cellClick(this, 4)"></div>
+        <div class="cell" onclick="cellClick(this, 5)"></div>
+        <div class="cell" onclick="cellClick(this, 6)"></div>
+        <div class="cell" onclick="cellClick(this, 7)"></div>
+        <div class="cell" onclick="cellClick(this, 8)"></div>
+    </div>
+    <button onclick="resetGame()">New Game</button>
+
+    <div id="winner-screen">
+        <p id="winner-message"></p>
+        <button onclick="resetGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
